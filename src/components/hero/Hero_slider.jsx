@@ -23,7 +23,7 @@ export default function Hero_slider() {
     };
 
     return (
-        <div>
+        <div className="slider__container">
             <Slider {...settings}>
                 {SLIDER_ENTITIES.map((entity, index) => (
                     <div className='slider' key={index}>
