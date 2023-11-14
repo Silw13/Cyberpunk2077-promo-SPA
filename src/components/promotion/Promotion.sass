@@ -12,3 +12,106 @@
 .promotion__top
     height: 70px
     background-image: url('./promo_top.png')
+
+.promotion__bottom
+    height: 70px
+    background-image: url('./promo_bot.png')
+
+@keyframes pulse
+    0%
+        transform: scale(0.9)
+
+    50%
+        transform: scale(1)
+
+    100%
+        transform: scale(0.9)
+
+.promotion__label
+    position: absolute
+    margin: -46px 0px 0px 0px
+    animation: pulse 2s infinite
+
+.promotion__txt
+    color: white
+    font-family: "Roboto", sans-serif
+    font-size: 18px
+    font-weight: 400
+    line-height: 34px
+
+.promotion__txt_blue
+    color: #52BEDC
+    font-weight: 700
+
+.promotion__input-panel
+    display: flex
+    justify-content: space-between
+
+.promotion__input-forms
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    width: 460px
+
+.promotion__input-txt
+    color: white
+    border: 0
+    background-color: black
+    border-bottom: 1px solid #777777
+    padding: 13px 0px
+    margin-bottom: 35px
+    font-family: "Roboto", sans-serif
+    font-size: 18px
+
+.promotion__input-txt:focus
+    outline: none
+
+.promotion__input-img
+    display: none
+
+.promotion__custom-file-upload
+    border: 1px dashed grey
+    margin-bottom: 35px
+    height: 120px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+
+.promotion__custom-file-upload-txt
+    color: white
+    text-decoration: underline
+    font-family: "Roboto", sans-serif
+    font-size: 18px
+    font-weight: 400
+    margin-bottom: 7px
+    opacity: 0.5
+
+.promotion__custom-file-upload-txt_size-s
+    text-decoration: none
+    font-size: 12px
+.promotion__custom-file-wrapper
+    align-items: center
+    display: flex
+    flex-direction: column
+
+.promotion__button
+    background-color: #F8F200
+    color: black
+    padding: 19px 50px
+    font-family: "Roboto", sans-serif
+    font-size: 18px
+    font-weight: 700
+    margin-bottom: 15px
+    transition: 0.6s
+
+.promotion__button:hover
+    background-color: #b9b9b9
+
+.promotion__chk-input-label
+    color: grey
+    font-family: "Roboto", sans-serif
+    font-size: 12px
+    font-weight: 400
+    display: flex
+    align-items: center

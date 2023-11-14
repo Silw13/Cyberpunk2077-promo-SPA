@@ -3,7 +3,7 @@ import './Hero.sass'
 
 export default function Hero() {
     return (
-        <div className="hero">
+        <section className="hero">
             <Hero_slider />
             <div className="container">
                 <div className="hero__show-more-block">
@@ -13,6 +13,6 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
