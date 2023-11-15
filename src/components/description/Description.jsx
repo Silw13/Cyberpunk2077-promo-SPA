@@ -3,6 +3,7 @@ import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 
 export default function Description() {
+
     return (
         <section className='description'>
             <div className='container'>
@@ -13,7 +14,7 @@ export default function Description() {
                 <div className='description__gallery'>
                     <div className='description__gallery-col'>
                         <Zoom>
-                            <img className='description__img description__img_size-l' src="./gallery/size L/1.jpg" alt="" />
+                            <img className='description__img description__img_size-${pictureSize}' src="./gallery/size L/1.jpg" alt="" />
                         </Zoom>
                         <Zoom>
                             <img className='description__img description__img_size-l' src="./gallery/size L/2.jpg" alt="" />
