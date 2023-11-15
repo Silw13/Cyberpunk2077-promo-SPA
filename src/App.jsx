@@ -1,4 +1,5 @@
 import Advertising from "./components/advertising/Advertising"
+import Buy from "./components/buy/Buy"
 import Description from "./components/description/Description"
 import Header from "./components/header/Header"
 import Hero from "./components/hero/hero"
@@ -13,6 +14,7 @@ function App() {
       <Description />
       <Promotion />
       <Advertising />
+      <Buy />
     </>
   )
 }
