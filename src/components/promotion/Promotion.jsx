@@ -23,7 +23,13 @@ export default function Promotion() {
                             <div>
                                 <button className='promotion__button'>Отправить</button>
                             </div>
-                            <label className='promotion__chk-input-label'><input type="checkbox" name="" id="" />Согласен на обработку персональных данных</label>
+                            <div className='promotion__footer'>
+                                <div className='promotion__chk-input-label'>
+                                    <input type="checkbox" name="" id="checkboxInput" value="1" />
+                                    <label for="checkboxInput"></label>
+                                </div>
+                                <span className='promotion__footer-txt'>Согласен на обработку персональных данных</span>
+                            </div>
                         </div>
                         <img className='promotion__img' src="./promo_pic.png" alt="" />
                     </div>
