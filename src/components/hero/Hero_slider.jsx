@@ -8,6 +8,14 @@ const SLIDER_ENTITIES_MEDIUM = ['./slider images/1_m.jpg', './slider images/2_m.
 const SLIDER_ENTITIES_SMALL = ['./slider images/1_s.jpg', './slider images/2_s.jpg', './slider images/3_s.jpg']
 
 export default function Hero_slider() {
+    const screenWidth = window.innerWidth;
+
+    let sliderEntities = SLIDER_ENTITIES_LARGE;
+    if (screenWidth <= 1024 && screenWidth > 320) {
+        sliderEntities = SLIDER_ENTITIES_MEDIUM;
+    } else if (screenWidth <= 320) {
+        sliderEntities = SLIDER_ENTITIES_SMALL;
+    }
 
     const settings = {
         arrows: false,
@@ -16,14 +24,14 @@ export default function Hero_slider() {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true, 
+        autoplay: true,
         autoplaySpeed: 2000,
     };
 
     return (
         <div className="slider__container">
             <Slider {...settings}>
-                {SLIDER_ENTITIES_LARGE.map((entity, index) => (
+                {sliderEntities.map((entity, index) => (
                     <div className='slider' key={index}>
                         <img className='slider__slide' src={entity} alt="Кипебпанк постер" />
                     </div>
