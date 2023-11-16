@@ -18,7 +18,7 @@
     background-image: url('./promo_bot.png')
 
 @keyframes pulse
-    0%  
+    0%
         transform: scale(0.9)
 
     50%
@@ -160,3 +160,9 @@ input[type="checkbox"]
     opacity: 0.5
     font-family: "Roboto", sans-serif
     font-size: 12px
+
+@media (max-width: 1024px)
+    .promotion__input-panel
+        flex-direction: column
+    .promotion__input-forms
+        width: 100%
